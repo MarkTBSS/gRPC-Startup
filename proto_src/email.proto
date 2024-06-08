@@ -18,12 +18,3 @@ message EmailResponse {
   string subject = 2;
   string body = 3;
 }
-
-service EmailService {
-    rpc SendEmail(EmailRequest) returns (EmailResponse) {
-        /* option (google.api.http) = {
-            post: "/email"
-            body: "*"
-        }; */
-    }
-}
